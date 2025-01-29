@@ -93,6 +93,7 @@ int main(){
     FloydloopDetection(head);
     // displayNode(head);
     getStartingNode(head);
+    displayNode(head);
 
         return 0;
 
