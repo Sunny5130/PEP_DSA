@@ -46,5 +46,6 @@ int main(){
     insertAtTail(tail,6);
     insertAtTail(tail,7);
     display(head);
+    display(head);
 
 }
