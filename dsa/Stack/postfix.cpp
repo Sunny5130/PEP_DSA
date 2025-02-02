@@ -1,6 +1,6 @@
-// #include<iostream>
-// #include<stack>
-// using namespace std;
+
+#include <bits/stdc++.h>
+using namespace std;
 
 // int postfix(string s){
 //     stack<int> st;
