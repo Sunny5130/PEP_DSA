@@ -31,6 +31,7 @@ int sumNodes(TreeNode<int> *root) {
     return leftSum + rightSum + root->data;
 }
 
+
 int main() {
     // Creating the binary tree manually
     TreeNode<int>* root = new TreeNode<int>(1);

@@ -1,32 +1,73 @@
-int sumAtK(Node* root, int k){
-if(root==NULL) return -1;
+#include <iostream>
+#include <queue>
+using namespace std;
 
-queue<Node*> q;
-q.push(root);
-q.push(NULL);
+// Definition of Node
+class Node {
+public:
+    int data;
+    Node* left;
+    Node* right;
 
-int level = 0;
-int sum = 0;
+    // Constructor
+    Node(int val) {
+        data = val;
+        left = right = NULL;
+    }
+};
 
-while(!q.empty()){
-Node* node = q.front();
-q.pop();
+// Function to find the sum of nodes at level K
+int sumAtK(Node* root, int k) {
+    if (root == NULL) return -1; // If the tree is empty
 
-if(node!=NULL){
-if(level == k){
-sum+=node->data;
+    queue<Node*> q;
+    q.push(root);
+    q.push(NULL); // Marker for level change
+
+    int level = 0;
+    int sum = 0;
+
+    while (!q.empty()) {
+        Node* node = q.front();
+        q.pop();
+
+        if (node != NULL) {
+            if (level == k) {
+                sum += node->data; // Add node value if it's at level K
+            }
+            if (node->left) q.push(node->left);
+            if (node->right) q.push(node->right);
+        } 
+        else if (!q.empty()) { // Level marker encountered
+            q.push(NULL); // Add marker for next level
+            level++; // Move to next level
+        }
+    }
+
+    return sum;
 }
-if(node->left) q.push(node->left);
 
-if(node->right) q.push(node->right);
-}
+// Main function
+int main() {
+    // Creating the binary tree manually
+    Node* root = new Node(1);
+    root->left = new Node(2);
+    root->right = new Node(3);
+    root->left->left = new Node(4);
+    root->left->right = new Node(5);
+    root->right->right = new Node(6);
 
-else if(!q.empty()){
-q.push(NULL);
-level++;
-}
-}
+    /*
+        Constructed Tree:
+                1
+               / \
+              2   3
+             / \   \
+            4   5   6
+    */
 
-return sum;
+    int k = 2; // Level at which we want to find the sum
+    cout << "Sum of nodes at level " << k << ": " << sumAtK(root, k) << endl;
 
+    return 0;
 }
