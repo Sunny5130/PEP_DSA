@@ -30,6 +30,14 @@ int sumNodes(TreeNode<int> *root) {
 
     return leftSum + rightSum + root->data;
 }
+int heightOfTree(TreeNode<int> *root) {
+    if (root == NULL) return 0; 
+
+    int lefth = heightOfTree(root->left);   
+    int righth = heightOfTree(root->right); 
+
+    return max(lefth,righth)+1;
+}
 
 
 int main() {
@@ -53,6 +61,7 @@ int main() {
     // Calling countNodes function
     cout << "Total number of nodes in the tree: " << countNodes(root) << endl;
     cout << "Sum of all nodes in the tree: " << sumNodes(root) << endl;
+    cout<<"Maximum Height Of Tree: "<<heightOfTree(root);
 
     return 0;
 }
