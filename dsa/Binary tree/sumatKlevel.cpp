@@ -18,7 +18,7 @@ public:
 
 // Function to find the sum of nodes at level K
 int sumAtK(Node* root, int k) {
-    if (root == NULL) return -1; // If the tree is empty
+    if (root == NULL) return -1; 
 
     queue<Node*> q;
     q.push(root);
@@ -37,9 +37,8 @@ int sumAtK(Node* root, int k) {
             }
             if (node->left) q.push(node->left);
             if (node->right) q.push(node->right);
-        } 
-        else if (!q.empty()) { // Level marker encountered
-            q.push(NULL); // Add marker for next level
+        } else if (!q.empty()) { // Level marker encountered
+            q.push(NULL); // Add marker for next level+
             level++; // Move to next level
         }
     }
@@ -66,7 +65,9 @@ int main() {
             4   5   6
     */
 
-    int k = 2; // Level at which we want to find the sum
+    int k; // Level at which we want to find the sum
+    cout<<"Enter the value of level :";
+    cin>>k;
     cout << "Sum of nodes at level " << k << ": " << sumAtK(root, k) << endl;
 
     return 0;

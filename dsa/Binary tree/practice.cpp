@@ -1,15 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// Definition of TreeNode
 template <typename T>
-class TreeNode {
+class TreeNode{
 public:
     T data;
     TreeNode* left;
     TreeNode* right;
 
-    // Constructor
     TreeNode(T val) {
         data = val;
         left = right = NULL;
@@ -41,7 +39,6 @@ int heightOfTree(TreeNode<int> *root) {
 
 
 int main() {
-    // Creating the binary tree manually
     TreeNode<int>* root = new TreeNode<int>(1);
     root->left = new TreeNode<int>(2);
     root->right = new TreeNode<int>(3);
@@ -58,7 +55,6 @@ int main() {
             4   5   6
     */
 
-    // Calling countNodes function
     cout << "Total number of nodes in the tree: " << countNodes(root) << endl;
     cout << "Sum of all nodes in the tree: " << sumNodes(root) << endl;
     cout<<"Maximum Height Of Tree: "<<heightOfTree(root);
