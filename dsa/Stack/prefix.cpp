@@ -7,7 +7,8 @@ int prefix(string s){
 
     for(int i=s.length()-1;i>=0;i--){
         if(s[i]>='0' && s[i]<='9'){
-            st.push(s[i]-'0'); //o mei minus integer banane ke liye kiya hai.
+            st.push(s[i]-'0'); 
+            //o mei minus integer banane ke liye kiya hai.
         }else{
             int oper1=st.top();
             st.pop();
