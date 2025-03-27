@@ -13,6 +13,7 @@ int main() {
     
     cout << arr[a-2] << endl;//second largest
     cout << arr[1] << endl;//second smallest
+    cout << arr[1] << endl;//second smallest
 
     return 0;
 }
