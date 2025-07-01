@@ -62,7 +62,7 @@
 
 
 
-
+#inclde<algorithm>
 #include<bits/stdc++.h>
 using namespace std;
 class Parent{
