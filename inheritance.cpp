@@ -101,6 +101,8 @@ class Child2:private Child{
 };
 
 int main(){
+    
+    
     Parent p;
     cout<<p.getWidth();
     Child c;
@@ -108,13 +110,6 @@ int main(){
     cout<<c.getHeight()<<endl;
     Child2 co;
     co.getHeight();
-
-
-
-
-
-
-
 
 
     // p.setWidth(8);
