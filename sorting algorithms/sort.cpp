@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 ////////-------------------------------------insertion sorting---------------------------------/////////
 void selectionsort(int arr[],int n){
@@ -25,6 +26,7 @@ void bubblesort(int arr[],int n){
             if(swaps==0)break;
     }
 }
+
 //--------------------------------------//insertion sorting----------------------------------//////////
 void insertionsort(int arr[],int n){
     for(int i=0;i<n;i++){
@@ -84,16 +86,46 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-int main(){
-    cout<<"Size of the array: ";
-    int a;
-    cin>>a;
-    
-    int arr[a];
-    cout<<"Input of the array: ";
-    for(int i=0;i<a;i++){
-        cin>>arr[i];
+void countingsort(vector<int> &arr){
+    int n = arr.size();
+    // step 1: get maximum value
+    int maxi = arr[0];
+    for (int i=0;i<n;i++) {
+        maxi = max(arr[i], maxi);
     }
+    // step 2: create count array and store frequency
+    vector<int>arr1(maxi+1, 0);
+    for (int i =0;i<n;i++) {
+        arr1[arr[i]]++;
+    }
+    // step 3: prefix sum
+    for (int i=1;i<=maxi;i++) {
+        arr1[i] +=arr1[i - 1];
+    }
+    // step 4: build output array (stable sort)
+    vector<int>output(n);
+    for (int i =n-1;i>=0;i--) {
+        output[--arr1[arr[i]]]=arr[i];
+    }
+    // step 5: copy back to arr
+    for (int i=0;i<n;i++) {
+        arr[i] =output[i];
+        cout <<arr[i] << " ";
+    }
+    cout << endl;
+}
+
+
+int main(){
+    // cout<<"Size of the array: ";
+    // int a;
+    // cin>>a;
+    
+    // int arr[a];
+    // cout<<"Input of the array: ";
+    // for(int i=0;i<a;i++){
+    //     cin>>arr[i];
+    // }
 
     // selectionsort(arr,a);
     // cout<<"Insert sorting: ";
@@ -113,10 +145,12 @@ int main(){
     //     cout<<arr[i]<<" ";
     // }
 
-    mergeSort(arr,0,a);
-    cout<<"merge sorting: ";
-    for(int i=0;i<a;i++){
-        cout<<arr[i]<<" ";
-    }
+    // mergeSort(arr,0,a);
+    // cout<<"merge sorting: ";
+    // for(int i=0;i<a;i++){
+    //     cout<<arr[i]<<" ";
+    // }
+    vector<int>arrr{21,4,2,6,7,8,9};
+    countingsort(arrr);
     return 0;
 }
