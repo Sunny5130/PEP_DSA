@@ -85,7 +85,7 @@ void mergeSort(int arr[], int l, int r) {
         merge(arr, l, m, r);
     }
 }
-
+// it is valid for only if an array have only  positve values 
 void countingsort(vector<int> &arr){
     int n = arr.size();
     // step 1: get maximum value
