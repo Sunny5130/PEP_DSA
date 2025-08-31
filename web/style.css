@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2b2b2b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sidebar .menu-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.sidebar nav ul li a:hover {
+    color: #fff;
+}
+
+.sidebar .history {
+    margin-top: 20px;
+}
+
+.sidebar .history h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sidebar .history ul {
+    list-style: none;
+}
+
+.sidebar .history ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar .history ul li a {
+    text-decoration: none;
+    color: #bbb;
+}
+
+.sidebar .history ul li a:hover {
+    color: #fff;
+}
+
+.sidebar .footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sidebar .footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.sidebar .footer button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chat-header h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat .message {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.chat .message p {
+    margin-bottom: 10px;
+}
+
+.chat .message pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+}
