@@ -2,10 +2,10 @@
 #include<vector>
 using namespace std;
 int main(){
-    // vector<int>v(2,-1);
-    // for(int i=0;i<5;i++){
-    //     cout<<v[i]<<" "<<endl;
-    // }
+    vector<int>v(2,-1);
+    for(int i=0;i<5;i++){
+        cout<<v[i]<<" "<<endl;
+    }
     vector<int>vdequeue;
     cout<<"Size of vector is: "<<v.size()<<endl;
     cout<<"Capacity of vector is : "<<v.capacity()<<endl;
