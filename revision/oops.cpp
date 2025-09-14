@@ -242,3 +242,108 @@ using namespace std;
 //multiple a child class is inherit from many base class
 //herarical  a many child class is inherit from single base class
 //hybrid whne two or more types of inheritance work as together
+
+
+
+
+// inheritance ambiguity-->it occur in multiple inheritnace
+// class a{
+//     public:
+//     void foo(){
+//         cout<<"class a";
+//     }
+// };
+// class b{
+//     public:
+//     void foo(){
+//         cout<<"class b";
+//     }
+// };
+// class co: public a, public b{
+//     public :
+//     void set(){
+//         // cout<<foo();
+//     }
+// };
+// int main(){
+//     co c;
+//     c.a::foo();  // using scope resolution operator
+//     cout<<endl;
+//     c.b::foo();
+// }
+
+
+
+//-----------------------------------polimorphism----------------------------------//
+// it is the ability of a function to behave in different ways
+// 1) compile time polimorphism-- it is acheived by function overloading and operator overloading
+// 2) run time polimorphism-- it is acheived by virtual function and pure  virtual function    
+
+//-------------------------------------------function overloading--------------------------------------------//
+// class saini{
+//     public:
+//     int x,y;
+//     void set(int x,int y){
+//         this->x=x;
+//         this->y=y;
+//     }
+//     int sum(){
+//         return x+y;
+//     }
+//     int sum(int x,int y,int z){
+//         return x+y+z;
+//     }
+//     int sum(int x,int y){
+//         return x+y;
+//     }
+//     string sum(string s1,string s2){
+//         return s1+s2;
+//     }
+// };
+// int main(){
+//     saini s;
+//     // s.set(2,4);
+//     // cout<<s.sum();
+//     cout<<s.sum()<<endl;
+//     cout<<s.sum(1,2,3)<<endl;
+//     cout<<s.sum(4,5)<<endl;
+//     cout<<s.sum("Hello","saini")<<endl;
+// }
+
+//---------------------------------function overriding-----------------------------------------//
+//--------when two classes having same function name as well as argument then we use function overring
+#include <iostream>
+using namespace std;
+
+class saini {
+public:
+    virtual void foo() {   // virtual keyword goes here
+        cout << "I am saini" << endl;
+    }
+};
+
+class a : public saini {
+public:
+    void foo() override {   // overrides saini::foo
+        cout << "I am a" << endl;
+    }
+};
+
+class b : public a {
+public:
+    void foo() override {   // overrides a::foo
+        cout << "I am b" << endl;
+    }
+};
+
+int main() {
+    saini* s;   // base class pointer
+    a A;
+    b B;
+    s = &A;
+    s->foo();   // calls a::foo (because of overriding)
+    s = &B;
+    s->foo();   // calls b::foo (because of overriding)
+
+    return 0;
+}
