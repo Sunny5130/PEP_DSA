@@ -3,6 +3,7 @@
         "*.ejs": "html",
         "ostream": "cpp",
         "iostream": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "random": "cpp"
     }
 }
