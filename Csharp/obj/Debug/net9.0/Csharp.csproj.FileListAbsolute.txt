@@ -1,0 +1,15 @@
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\bin\Debug\net9.0\Csharp.exe
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\bin\Debug\net9.0\Csharp.deps.json
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\bin\Debug\net9.0\Csharp.runtimeconfig.json
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\bin\Debug\net9.0\Csharp.dll
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\bin\Debug\net9.0\Csharp.pdb
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.AssemblyInfoInputs.cache
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.AssemblyInfo.cs
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.csproj.CoreCompileInputs.cache
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.sourcelink.json
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.dll
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\refint\Csharp.dll
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.pdb
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\Csharp.genruntimeconfig.cache
+C:\Users\sunny\OneDrive\Desktop\Dsa Practice\Csharp\obj\Debug\net9.0\ref\Csharp.dll
