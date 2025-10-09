@@ -58,6 +58,7 @@ void inorder(Node* &root){
     inorder(root->right);
 }
 //-----------------------------------------minimum value from bst-------------------------------//
+
 Node* minval(Node* &root){
     Node* temp=root;
     while(temp->left !=NULL){
@@ -65,6 +66,7 @@ Node* minval(Node* &root){
     }
     return temp;
 }
+
 //-------------------------------------maximum value from bst---------------------------------//
 Node* maxval(Node* &root){
     Node* temp=root;
@@ -144,6 +146,7 @@ int main(){
     cout<<endl;
     return 0;
 }
+
 
 
 // 10 6 11 5 12 4 17 1 3 20 -1
