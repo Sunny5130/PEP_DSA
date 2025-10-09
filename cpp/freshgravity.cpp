@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-//-------------------------------------merge sequence of less than 100 --------------------
+//-------------------------------------merge sequence of less than 100 --------------------/////
+//--------------------------------------fresh gravity second question 20 marks---------------///
 bool lesshundred(int v){
     int count=0;
     while(v>0){
