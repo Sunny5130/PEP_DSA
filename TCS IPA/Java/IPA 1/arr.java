@@ -1,5 +1,10 @@
 
+
+
 // https://github.com/Arijit-SE/Java-Solutions-TCS-IPA-Questions/blob/main/Count_Word_Vowel.java
+
+
+
 
 
 // import java.util.*;
@@ -16,7 +21,7 @@
 //         // // Arrays.sort(arr);
 //         // System.out.println("Elements of an array is: ");
 //         // for(int i=0;i<n;i++){
-//         //     System.out.print(arr[i]+" ");
+//         //     System.out.print(arr[i]+" "   );
 //         // }
 
 
@@ -182,7 +187,7 @@
 
 
 
-//-------sum of ligit until don't achive-------//
+//-------sum of digit until don't achive-------//
 // import java.util.*;
 // public class arr{
 
@@ -205,8 +210,6 @@
 //         sc.close();
 //     }
 // }
-
-
 
 
 
@@ -300,15 +303,15 @@
 
 
 
-//--fabonnachi number--
+// //--fabonnachi number--
 // import java.util.*;
 // public class arr{
 //     public static void main(String[] args){
 //         Scanner sc=new Scanner(System.in);
 //         int n=sc.nextInt();
 //         int x=0,y=1;
-//         System.out.print("Fabbo series: "+x+" "+y+" ");
-//         for(int i=3;i<=n;i++){
+//         System.out.print(0+" ");
+//         for(int i=0;i<n-1;i++){
 //             int z=x+y;
 //             System.out.print(z+" ");
 //             x=y;
@@ -460,12 +463,12 @@
     //     Scanner sc=new Scanner(System.in);
 
 
-
 /*Count the number of words in a sentence that contain at least two consecutive vowels (a, e, i, o, u) in them.
 Here's a sample input and output:
 Input: I enjoy eating spaghetti and meatballs for dinner
 Output: 2
 Explanation: There are two words in the sentence that contain at least two consecutive vowels - "enjoy" and "meatballs"
+
  */
         // String s=sc.nextLine();
         // int count=0;
@@ -720,29 +723,29 @@ capital letter: "The", "Brown", and "Fox". */
 
 //Count Uppercase and lowercase in string
 
-import java.util.*;
-public class arr{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        int low=0,upe=0;
-        for(int i=0;i<s.length();i++){
-            // if(Character.isAlphabetic(s.charAt(i))){
-            //     if(Character.isLowerCase(s.charAt(i))){
-            //         low++;
-            //     }else{
-            //         upe++;
-            //     }
-            // }
-            char c=s.charAt(i);
-            if(c>='a' && c<='z'){
-                low++;
-            }else if(c>='A' && c<='Z'){
-                upe++;
-            }
-        }
-        System.out.println("Uppercase letter are: "+upe);
-        System.out.println("Lowercase letter are: "+low);
-        sc.close();
-    }
-}
+// import java.util.*;
+// public class arr{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String s=sc.nextLine();
+//         int low=0,upe=0;
+//         for(int i=0;i<s.length();i++){
+//             // if(Character.isAlphabetic(s.charAt(i))){
+//             //     if(Character.isLowerCase(s.charAt(i))){
+//             //         low++;
+//             //     }else{
+//             //         upe++;
+//             //     }
+//             // }
+//             char c=s.charAt(i);
+//             if(c>='a' && c<='z'){
+//                 low++;
+//             }else if(c>='A' && c<='Z'){
+//                 upe++;
+//             }
+//         }
+//         System.out.println("Uppercase letter are: "+upe);
+//         System.out.println("Lowercase letter are: "+low);
+//         sc.close();
+//     }
+// }

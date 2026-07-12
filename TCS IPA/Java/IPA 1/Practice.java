@@ -18,6 +18,6 @@ class Saini{
 public class Practice{
     public static void main(String[]args){
         Saini s=new Saini();
-        System.out.println("SIze of Saini class is: "+Object.size(s));
+        // System.out.println("SIze of Saini class is: "+Object.size(s));
     }
 }
